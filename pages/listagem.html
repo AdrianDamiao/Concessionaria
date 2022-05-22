@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Página de listagem dos veículos vendidos pela concessionária">
+    <meta name="author" content="Adrian Damião e Luan Venancio">
+    <title>Listagem de Veículos</title>
+    <link href="../src/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <img src="../public/logo.png" class="w-100 mb-3">
+    <div id="nav-bar"></div>
+
+    <div class="card mt-3 w-100">
+        <div class="card-header fs-2 fw-bold">
+            Veja os nossos veículos
+        </div>
+    </div>
+
+    <div>
+        <form class="ms-2 mt-3 pe-2 row w-100">
+            <div class="col-8">
+                <input type="text" class="form-control" id="searchInput" placeholder="Digite o nome de um carro">
+            </div>
+            <div class="col-4">
+                <button type="submit" class="btn btn-primary mb-1 w-100">Buscar Carro</button>
+            </div>
+            </form>
+    </div>
+
+    <footer class="mt-3 border-top">
+        <div class="ps-2 pt-2 text-start">
+            © Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços de Caldas, MG.
+        </div>
+    </footer>
+
+    <script src="../src/js/bootstrap.min.js"></script>
+    <script src="../src/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $.get("../src/components/navbar.html", function(data){
+            $("#nav-bar").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>
