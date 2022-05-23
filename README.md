@@ -40,6 +40,7 @@ $ yarn start
  <br />
  <sub><b>Adrian Damião</b></sub></a> <a href="https://github.com/AdrianDamiao" title="Adrian Damião"></a>
  <br />
+             <br />
  
 [![Linkedin Badge](https://img.shields.io/badge/-Adrian%20Damiao-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/adrian-damião-69b1b8148/)](https://www.linkedin.com/in/adrian-damião-69b1b8148/) 
 [![Gmail Badge](https://img.shields.io/badge/-adriandami__%40hotmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:adriandami_@hotmail.com)](mailto:adriandami_@hotmail.com)
