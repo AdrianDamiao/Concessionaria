@@ -13,30 +13,40 @@
 <body>
     <img src="../public/logo.png" class="w-100 mb-3">
     <div id="nav-bar"></div>
-    
+
     <div>
-        <form class="ms-2 mt-3 pe-2 row w-100">
+        <form id="form" class="ms-2 mt-3 pe-2 row w-100">
             <div class="row mb-3">
                 <div class="col-5">
                     <label for="selectMarca" class="form-label">Marca</label>
                     <select class="form-select" id="selectMarca" required>
                         <option value="" selected> -- Selecionar --</option>
-                        <option value="V">Volks</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Kia">Kia</option>
+                        <option value="MercedesBenz">Mercedes-Benz</option>
+                        <option value="BMW">BMW</option>
                     </select>
                 </div>
                 <div class="col-5">
                     <label for="inputModelo" class="form-label">Modelo</label>
-                    <input type="text" id="inputModelo" class="form-control" placeholder="Insira o nome do modelo" required>   
-               </div>
+                    <input type="text" id="inputModelo" class="form-control" placeholder="Insira o nome do modelo"
+                        required>
+                </div>
             </div>
             <div class="row mb-3">
                 <div class="col-5">
                     <label for="inputAno" class="form-label">Ano</label>
-                    <input type="number" id="inputAno" class="form-control" placeholder="Insira o ano do modelo" required>             
+                    <input type="number" id="inputAno" class="form-control" placeholder="Insira o ano do modelo"
+                        required>
                 </div>
                 <div class="col-5">
                     <label for="inputPreco" class="form-label">Preço</label>
-                    <input type="number" id="inputPreco" class="form-control" placeholder="Insira o preço do modelo" required>
+                    <input type="number" id="inputPreco" class="form-control" placeholder="Insira o preço do modelo"
+                        required>
                 </div>
             </div>
             <div class="row mb-3">
@@ -48,20 +58,29 @@
                     <label for="selectCor" class="form-label">Cor</label>
                     <select class="form-select" id="selectCor" required>
                         <option value="" selected> -- Selecionar --</option>
-                        <option value="V">V</option>
+                        <option value="Preto">Preto</option>
+                        <option value="Branco">Branco</option>
+                        <option value="Vermelho">Vermelho</option>
+                        <option value="Cinza">Cinza</option>
+                        <option value="Laranja">Laranja</option>
+                        <option value="Amarelo">Amarelo</option>
+                        <option value="Verde">Verde</option>
+                        <option value="Azul">Azul</option>
+                        <option value="Violeta">Violeta</option>
                     </select>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-10">
                     <label for="textareaDescricao" class="form-label">Descriçao</label>
-                    <textarea class="form-control" id="textareaDescricao" rows="3" placeholder="Insira a descrição do veículo" required></textarea>
+                    <textarea class="form-control" id="textareaDescricao" rows="3"
+                        placeholder="Insira a descrição do veículo" required></textarea>
                 </div>
             </div>
             <div class="col-10 d-flex gap-2 justify-content-end">
-            
+
                 <button type="submit" class="btn btn-primary">Cadastrar Veículo</button>
-            
+
                 <button type="reset" class="btn btn-secondary">Limpar</button>
             </div>
         </form>
@@ -72,12 +91,12 @@
         </div>
     </footer>
 
-    <script src="../src/js/webStorage.js"></script>
+    <script src="../src/js/main.js"></script>
     <script src="../src/js/vanilla-masker.min.js"></script>
     <script src="../src/js/bootstrap.min.js"></script>
     <script src="../src/js/jquery-3.6.0.min.js"></script>
     <script>
-        $.get("../src/components/navbar.html", function(data){
+        $.get("../src/components/navbar.html", function (data) {
             $("#nav-bar").replaceWith(data);
         });
     </script>

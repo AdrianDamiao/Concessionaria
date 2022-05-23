@@ -13,31 +13,31 @@
 <body>
     <img src="../public/logo.png" class="w-100 mb-3">
     <div id="nav-bar"></div>
-    
+
     <div class="card mt-3 w-100">
         <div class="card-header fs-2">
             Sobre nós
         </div>
         <div class="card-body">
             <div class="row">
-            <div class="col-sm text-center">
-                <img src="../src/img/sapo.jpg" class="img-thumbnail mb-3" alt="">
-                <p> <strong>Nome:</strong> Luan Venancio</p>
-                <p> <strong>Email:</strong> luan.venancio@alunos.ifsuldeminas.edu.br</p>
-                <p> <strong>Curso: </strong>Engenharia da Computação</p>
-                <p> <strong>Período: </strong> 7º </p>
-            </div>
-            <div class="col-sm text-center">
-                <img src="../src/img/sapo.jpg" class="img-thumbnail mb-3" alt="">
-                <p> <strong>Nome:</strong> Adrian Damião</p>
-                <p> <strong>Email: </strong> adrian.damiao@alunos.ifsuldeminas.edu.br</p>
-                <p> <strong>Curso: </strong>Engenharia da Computação</p>
-                <p> <strong>Período: </strong> 7º</p>
-            </div>
+                <div class="col-sm text-center">
+                    <img src="../src/fotos/sapo.jpg" class="img-thumbnail mb-3" alt="">
+                    <p> <strong>Nome:</strong> Luan Venancio</p>
+                    <p> <strong>Email:</strong> luan.venancio@alunos.ifsuldeminas.edu.br</p>
+                    <p> <strong>Curso: </strong>Engenharia da Computação</p>
+                    <p> <strong>Período: </strong> 7º </p>
+                </div>
+                <div class="col-sm text-center">
+                    <img src="../src/fotos/sapo.jpg" class="img-thumbnail mb-3" alt="">
+                    <p> <strong>Nome:</strong> Adrian Damião</p>
+                    <p> <strong>Email: </strong> adrian.damiao@alunos.ifsuldeminas.edu.br</p>
+                    <p> <strong>Curso: </strong>Engenharia da Computação</p>
+                    <p> <strong>Período: </strong> 7º</p>
+                </div>
             </div>
         </div>
     </div>
-    
+
     <footer class="mt-3 border-top">
         <div class="ps-2 pt-2 text-start">
             © Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços de Caldas, MG.
@@ -47,7 +47,7 @@
     <script src="../src/js/bootstrap.min.js"></script>
     <script src="../src/js/jquery-3.6.0.min.js"></script>
     <script>
-        $.get("../src/components/navbar.html", function(data){
+        $.get("../src/components/navbar.html", function (data) {
             $("#nav-bar").replaceWith(data);
         });
     </script>
