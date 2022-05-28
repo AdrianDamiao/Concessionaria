@@ -25,7 +25,6 @@ const onEdit = () => {
 
 const handleEditFormSubmit = (event) => {
     event.preventDefault();
-    console.log('oi');
     
     const carId = id;
     const carModel = inputCarModel.value.trim();
@@ -71,7 +70,6 @@ const updateCar = (
     inputCarDescription
 ) => {
     const localStoragecars = JSON.parse(localStorage.getItem("cars"));
-    console.log(localStoragecars);
     const cars = localStoragecars.map((car) =>
         car.id === parseInt(carId) ? { 
             id: parseInt(carId),
@@ -86,7 +84,7 @@ const updateCar = (
     );
 
     localStorage.setItem("cars", JSON.stringify(cars));
-    
+
     window.location.href = '/pages/listagem.html';
 };
 
