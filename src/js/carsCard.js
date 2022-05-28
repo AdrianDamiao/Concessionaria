@@ -37,9 +37,11 @@ const addcarIntoDom = ({
                     <p>${description}</p>
                   </div>
                   <div class="col-10 d-flex gap-2 justify-content-end">
-                    <button type="button" class="btn btn-primary" onClick="editcar(${id})">
-                        Editar
-                    </button>
+                    <a href="../../pages/editarCarro.html?id=${id}">
+                        <button type="button" class="btn btn-primary" onClick="editcar(${id})">
+                            Editar
+                        </button>
+                    </a>
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalConfirm">
                         Excluir
                     </button>
