@@ -12,7 +12,20 @@
 
 <body>
     <img src="../public/logo.png" class="w-100 mb-3">
-    <div id="nav-bar"></div>
+    <div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarCollapse1">
+                    <div class="navbar-nav">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="pages/listagem.html" class="nav-item nav-link">Listagem</a>
+                        <a href="pages/cadastro.html" class="nav-item nav-link">Cadastro</a>
+                        <a href="pages/sobre.html" class="nav-item nav-link">Sobre</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 
     <div class="card mt-3 w-100">
         <div class="card-header fs-2 fw-bold">
@@ -46,11 +59,6 @@
     <script src="../src/js/carsCard.js"></script>
     <script src="../src/js/lib/bootstrap.min.js"></script>
     <script src="../src/js/lib/jquery-3.6.0.min.js"></script>
-    <script>
-        $.get("../src/components/navbar.html", function (data) {
-            $("#nav-bar").replaceWith(data);
-        });
-    </script>
 </body>
 
 </html>
