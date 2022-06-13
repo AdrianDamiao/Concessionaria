@@ -42,11 +42,11 @@ const addTocarsArray = (
 
 const cleanInputs = () => {
     inputCarModel.value = "";
-    selectedBrand.value = "";
+    inputCarBrand.selectedIndex = 0;
     inputCarYear.value = "";
     inputCarPrice.value = "";
     inputCarPhoto.value = "";
-    selectedColor.value = "";
+    inputCarColor.selectedIndex = 0;    
     inputCarDescription.value = "";
 };
 
