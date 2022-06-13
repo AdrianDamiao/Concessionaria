@@ -1,55 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A página principal do projeto">
-    <meta name="author" content="Adrian Damião e Luan Venancio">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="A página principal do projeto" />
+    <meta name="author" content="Adrian Damião e Luan Venancio" />
     <title>Concessionaria XPTO</title>
-    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<body>
-    <img src="./public/logo.png" class="w-100 mb-3">
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarCollapse1" aria-controls="navbarCollapse1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
+  <body>
+    <img src="./public/logo.png" class="w-100 mb-3" />
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo01"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/listagem.html" class="nav-link">Listagem</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/cadastro.html" class="nav-link">Cadastro</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pages/sobre.html" class="nav-item nav-link">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-            
-                <div class="collapse navbar-collapse" id="navbarCollapse1">
-                    <div class="navbar-nav">
-                        <a href="./index.html" class="nav-item nav-link active">Home</a>
-                        <a href="./pages/listagem.html" class="nav-item nav-link">Listagem</a>
-                        <a href="./pages/cadastro.html" class="nav-item nav-link">Cadastro</a>
-                        <a href="./pages/sobre.html" class="nav-item nav-link">Sobre</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </div>
-    
     <div class="card mt-3 w-100">
-        <div class="card-header fs-2">
-            Bem vindo(a) à nossa concessionária!
-        </div>
-        <div class="card-body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur possimus quis blanditiis vitae error corrupti ipsam. Provident, eveniet. Quasi, sed? Alias omnis ratione suscipit nostrum itaque accusantium maiores cupiditate doloribus.
-        </div>
+      <div class="card-header fs-2">Bem vindo(a) à nossa concessionária!</div>
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        possimus quis blanditiis vitae error corrupti ipsam. Provident, eveniet.
+        Quasi, sed? Alias omnis ratione suscipit nostrum itaque accusantium
+        maiores cupiditate doloribus.
+      </div>
     </div>
 
     <footer class="mt-3 border-top">
-        <div class="ps-2 pt-2 text-start">
-            © Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços de Caldas, MG.
-        </div>
+      <div class="ps-2 pt-2 text-start">
+        © Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços
+        de Caldas, MG.
+      </div>
     </footer>
 
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="./src/js/lib/bootstrap.min.js"></script>
     <script src="./src/js/lib/jquery-3.6.0.min.js"></script>
-</body>
-
+  </body>
 </html>
