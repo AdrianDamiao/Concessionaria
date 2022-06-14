@@ -32,7 +32,7 @@ const addcarIntoDom = ({
                     <p>${description}</p>
                   </div>
                   <div class="col-10 d-flex gap-2 justify-content-end">
-                    <a href="../../pages/editarCarro.html?id=${id}">
+                    <a href="./pages/editarCarro.html?id=${id}">
                         <button type="button" class="btn btn-primary">
                             Editar
                         </button>
