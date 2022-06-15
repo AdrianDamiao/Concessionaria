@@ -22,7 +22,9 @@
   </head>
 
   <body onload="onEdit()">
-    <img src="../public/logo.png" class="w-100 mb-3" />
+    <div class="p-4 mb-3 bg-light rounded-3">
+      <img src="./../public/logo.png" class="w-25" />
+    </div>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <button
@@ -58,7 +60,7 @@
     <div>
       <form id="form" class="ps-2 mt-3 pe-2 row w-100">
         <div class="row mb-3">
-          <div class="col-5">
+          <div class="col-6">
             <label for="selectMarca" class="form-label">Marca</label>
             <select class="form-select" id="selectMarca" required>
               <option value="" selected>-- Selecionar --</option>
@@ -72,7 +74,7 @@
               <option value="BMW">BMW</option>
             </select>
           </div>
-          <div class="col-5">
+          <div class="col-6">
             <label for="inputModelo" class="form-label">Modelo</label>
             <input
               type="text"
@@ -85,7 +87,7 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-5">
+          <div class="col-6">
             <label for="inputAno" class="form-label">Ano</label>
             <input
               type="number"
@@ -97,7 +99,7 @@
               required
             />
           </div>
-          <div class="col-5">
+          <div class="col-6">
             <label for="inputPreco" class="form-label">Preço</label>
             <input
               type="text"
@@ -112,7 +114,7 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-5">
+          <div class="col-6">
             <label for="inputFoto" class="form-label">Foto</label>
             <input
               type="text"
@@ -121,7 +123,7 @@
               placeholder="Insira o nome da foto"
             />
           </div>
-          <div class="col-5">
+          <div class="col-6">
             <label for="selectCor" class="form-label">Cor</label>
             <select class="form-select" id="selectCor" required>
               <option value="" selected>-- Selecionar --</option>
@@ -138,7 +140,7 @@
           </div>
         </div>
         <div class="row mb-3">
-          <div class="col-10">
+          <div class="col-12">
             <label for="textareaDescricao" class="form-label">Descriçao</label>
             <textarea
               class="form-control"
@@ -149,7 +151,7 @@
             ></textarea>
           </div>
         </div>
-        <div class="col-10 d-flex gap-2 justify-content-end">
+        <div class="col-12 d-flex gap-2 justify-content-end">
           <button type="submit" class="btn btn-primary">Salvar Edição</button>
 
           <button type="reset" class="btn btn-secondary">Limpar</button>
