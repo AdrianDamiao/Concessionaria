@@ -82,6 +82,7 @@ const handleFormSubmit = (event) => {
         carColor,
         carDescription
     );
+    
     updateLocalStorage();
 
     cleanInputs();

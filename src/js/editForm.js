@@ -85,7 +85,7 @@ const updateCar = (
 
     localStorage.setItem("cars", JSON.stringify(cars));
 
-    window.location.href = '/pages/listagem.html';
+    window.location.href = '../pages/listagem.html';
 };
 
 
