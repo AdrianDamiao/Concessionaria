@@ -1,0 +1,8 @@
+Nesse trabalho utilizamos bootstrap e Javascript, utilizamos o JS para adicionar carros
+ao Local Storage do navegador. É possível atualizar, listar e deletá-los do Local Storage 
+também. O trabalho também possui modais de confirmação de exclusão e cadastro além de possuir
+validações nos formulários. Por padrão, a imagem é atribuida digitando o nome do carro e caso ele
+não esteja nas opções disponíveis(pasta fotos) uma imagem cinza aparecerá por padrão. O campo modelo
+aceita números, letras, ponto e espaço.
+
+Exemplos Funcionais de Imagem: jetta, apachevip4 e gol
