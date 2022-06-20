@@ -1,4 +1,4 @@
-const params =  new URLSearchParams(window.location.search);
+const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
 
 const form = document.querySelector("#form");
@@ -11,7 +11,7 @@ const inputCarColor = document.querySelector("#selectCor");
 const inputCarDescription = document.querySelector("#textareaDescricao");
 
 const onEdit = () => {
-    const localStorageCars = JSON.parse(localStorage.getItem("cars")); 
+    const localStorageCars = JSON.parse(localStorage.getItem("cars"));
 
     const car = localStorageCars.find((car) => car.id === parseInt(id))
     document.getElementById("selectMarca").value = car.brand;
@@ -25,7 +25,7 @@ const onEdit = () => {
 
 const handleEditFormSubmit = (event) => {
     event.preventDefault();
-    
+
     const carId = id;
     const carModel = inputCarModel.value.trim();
     const carBrand = inputCarBrand.value.trim();
@@ -41,9 +41,28 @@ const handleEditFormSubmit = (event) => {
         carPrice === "" ||
         carColor === "" ||
         carDescription === "";
+    let Price = carPrice.replace(/[^\d]/g, '');
+    Price = Price.slice(0, -2);
 
+
+    //Validação
     if (isSomeInputEmpty) {
         alert("Por favor, preencha os dados do veiculo!");
+        return;
+    }
+
+    if (carModel.lenght <= 1) {
+        alert("Modelo de Carro deve possuir mais de 1 caractere");
+        return;
+    }
+
+    if (carYear <= 1900) {
+        alert("O ano deve ser maior que 1900");
+        return;
+    }
+
+    if ((Price < 0) || (Price > 100000000)) {
+        alert("Preço não pode ser negativo e não pode ser maior que 100 milhões de reais");
         return;
     }
 
@@ -71,7 +90,7 @@ const updateCar = (
 ) => {
     const localStoragecars = JSON.parse(localStorage.getItem("cars"));
     const cars = localStoragecars.map((car) =>
-        car.id === parseInt(carId) ? { 
+        car.id === parseInt(carId) ? {
             id: parseInt(carId),
             model: inputCarModel,
             brand: selectedBrand,

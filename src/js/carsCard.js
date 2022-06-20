@@ -26,7 +26,7 @@ const addcarIntoDom = ({
                   <h2 class="card-title">${model}</h2>
                   <div class="card-text">
                     <p><strong>Marca:</strong> ${brand}</p>
-                    <p><strong>Preço:</strong> R$ ${price}</p>
+                    <p><strong>Preço:</strong> ${price}</p>
                     <p><strong>Cor:</strong> ${color}</p>
                     <p><strong>Ano:</strong> ${year}</p>
                     <p>${description}</p>
