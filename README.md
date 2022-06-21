@@ -1,6 +1,6 @@
 # Concessionaria
 
-#### O `Nome do Site` é um site para a compra e venda de veículos feito com HTML 5 e Bootstrap 5.
+#### O `Vale Sul Concessionária` é um site para a compra e venda de veículos feito com HTML 5 e Bootstrap 5.
 
 ---
 
