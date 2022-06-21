@@ -18,8 +18,8 @@ const addcarIntoDom = ({
     div.classList.add("card", "m-3");
     div.innerHTML = `
       <div class="row g-3">
-          <div class="col-md-4 text-center">
-              <img src="../src/fotos/${photo}.jpg" onerror="javascript:this.src='../src/fotos/default.jpg'" class="img-thumbnail m-3">
+          <div class="col-md-4 p-3 text-center">
+              <img src="../src/fotos/${photo}.jpg" onerror="javascript:this.src='../src/fotos/default.jpg'" class="img-thumbnail">
           </div>
           <div class="col-md-8">
               <div class="card-body">
